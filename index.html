@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Segura Mais: empresa de segurança privada com monitoramento, vigilância e escolta armada para empresas e condomínios.">
+  <title>Segura Mais | Início</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo__conteudo">
+      <a class="logo" href="index.html">
+        <img src="Imagens/logoseguramais.png" alt="Segura Mais Segurança Privada" width="auto" height="100">
+      </a>
+
+      <!-- Menu hambúrguer do celular feito só com CSS (checkbox + label), sem JavaScript -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-botao" aria-label="Abrir ou fechar o menu"><span></span></label>
+
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" class="ativo" aria-current="page">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="index.html#depoimentos">Depoimentos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <span class="eyebrow">Segurança é a nossa prioridade</span>
+          <h1>Proteção para o que mais importa.</h1>
+          <p class="hero__descricao">A Segura Mais é uma empresa de segurança privada que oferece serviços de monitoramento, vigilância e escolta armada para residências e empresas</p>
+          <div class="botoes">
+            <a href="#cotacao" class="botao botao--amarelo">Solicitar Cotação</a>
+            <a href="servicos.html" class="botao botao--azul">Conheça nossos serviços <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+        <img class="hero__imagem" src="Imagens/seguranca.png" alt="Vigilante da Segura Mais falando no rádio" width="520" height="440">
+      </div>
+    </section>
+
+    <section class="secao secao--clara" id="servicos">
+      <div class="container">
+        <div class="cabecalho-secao cabecalho-secao--centro">
+          <span class="eyebrow">Nossos serviços</span>
+          <h2 class="titulo">Soluções completas em segurança</h2>
+        </div>
+
+        <div class="grade-servicos">
+          <article class="card-servico">
+            <h3 class="card-servico__titulo"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M6 10h3l1.5-3 3 6 1.5-3H18"/></svg> Monitoramento</h3>
+            <p>Sistemas de câmeras e tecnologia de ponta para vigilância 24h</p>
+          </article>
+
+          <article class="card-servico">
+            <h3 class="card-servico__titulo"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l13-4 2.2 7.2L5.2 15.2z"/><path d="M18.2 11.2l2.8-.8"/><path d="M7 15.2l-.8 4M3.5 19.5h6"/></svg> Vigilância</h3>
+            <p>Equipe de vigilantes altamente treinada e preparada</p>
+          </article>
+
+          <article class="card-servico">
+            <h3 class="card-servico__titulo"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16l1.4-4.6A2 2 0 0 1 8.3 10h7.4a2 2 0 0 1 1.9 1.4L19 16"/><rect x="3" y="16" width="18" height="4" rx="1.5"/><path d="M6.5 18h.01M17.5 18h.01"/></svg> Escolta Armada</h3>
+            <p>Proteção especializada para pessoas e cargas de alto valor</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--clara secao--compacta">
+      <div class="container sobre-resumo">
+        <img src="Imagens/casacomcamera.webp" alt="Casa moderna protegida pela Segura Mais" width="800" height="600">
+
+        <div class="sobre-resumo__texto">
+          <span class="eyebrow">Sobre a Segura Mais</span>
+          <p>Somos uma empresa de segurança privada que atua no mercado oferecendo soluções completas para empresas e condomínios. Contamos com tecnologia avançada e uma equipe de profissionais qualificados, sempre prontos para garantir a sua segurança.</p>
+          <a href="sobre.html" class="botao botao--azul">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--clara secao--compacta" id="depoimentos">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="eyebrow">Depoimentos</span>
+          <h2 class="titulo">O que nossos clientes dizem</h2>
+        </div>
+
+        <div class="carrossel">
+          <input type="radio" name="depoimentos" id="dep-1" class="carrossel__radio" checked>
+          <input type="radio" name="depoimentos" id="dep-2" class="carrossel__radio">
+          <input type="radio" name="depoimentos" id="dep-3" class="carrossel__radio">
+
+          <div class="carrossel__janela">
+            <div class="carrossel__trilho">
+              <div class="carrossel__pagina">
+                <article class="depoimento">
+                  <blockquote>
+                    <p>&ldquo; A Segura Mais nos oferece tranquilidade e segurança no dia a dia. Serviço de qualidade e equipe muito profissional &rdquo;</p>
+                  </blockquote>
+                  <footer class="depoimento__autor">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <div>
+                      <strong>Mariana Silva</strong>
+                      <span>Condomínio Residencial</span>
+                    </div>
+                  </footer>
+                </article>
+
+                <article class="depoimento">
+                  <blockquote>
+                    <p>&ldquo; Contratamos o serviço de monitoramento para nossa empresa e só temos elogio &rdquo;</p>
+                  </blockquote>
+                  <footer class="depoimento__autor">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <div>
+                      <strong>Carlos Mendes</strong>
+                      <span>Empresa Tech Solutions</span>
+                    </div>
+                  </footer>
+                </article>
+              </div>
+
+              <div class="carrossel__pagina">
+                <article class="depoimento">
+                  <blockquote>
+                    <p>&ldquo; A equipe de vigilantes é atenciosa e muito bem preparada. Nos sentimos seguros desde o primeiro dia &rdquo;</p>
+                  </blockquote>
+                  <footer class="depoimento__autor">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <div>
+                      <strong>Roberto Almeida</strong>
+                      <span>Condomínio Jardim das Flores</span>
+                    </div>
+                  </footer>
+                </article>
+
+                <article class="depoimento">
+                  <blockquote>
+                    <p>&ldquo; O atendimento é rápido e a central de monitoramento sempre responde quando precisamos &rdquo;</p>
+                  </blockquote>
+                  <footer class="depoimento__autor">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <div>
+                      <strong>Fernanda Costa</strong>
+                      <span>Loja Central</span>
+                    </div>
+                  </footer>
+                </article>
+              </div>
+
+              <div class="carrossel__pagina">
+                <article class="depoimento">
+                  <blockquote>
+                    <p>&ldquo; Usamos a escolta armada no transporte de cargas de alto valor, com planejamento e pontualidade &rdquo;</p>
+                  </blockquote>
+                  <footer class="depoimento__autor">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <div>
+                      <strong>Paulo Henrique</strong>
+                      <span>Transportadora Rota Norte</span>
+                    </div>
+                  </footer>
+                </article>
+
+                <article class="depoimento">
+                  <blockquote>
+                    <p>&ldquo; Depois que fechamos com a Segura Mais, a portaria do nosso prédio ficou muito mais organizada e segura &rdquo;</p>
+                  </blockquote>
+                  <footer class="depoimento__autor">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <div>
+                      <strong>Luciana Prado</strong>
+                      <span>Residencial Vista Alegre</span>
+                    </div>
+                  </footer>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="carrossel__pontos">
+            <label for="dep-1" aria-label="Mostrar depoimentos 1 e 2"></label>
+            <label for="dep-2" aria-label="Mostrar depoimentos 3 e 4"></label>
+            <label for="dep-3" aria-label="Mostrar depoimentos 5 e 6"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cotacao" id="cotacao">
+      <div class="container cotacao__grade">
+        <div class="cotacao__texto">
+          <span class="eyebrow">Solicite uma cotação</span>
+          <h2 class="titulo">Faça um orçamento sem compromisso.</h2>
+          <p>Preencha esse formulário e nossa equipe entrará em contato o mais rápido possível</p>
+          <ul class="vantagens">
+            <li><svg class="icone icone--cheio" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg> Atendimento Rápido</li>
+            <li><svg class="icone icone--cheio" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V5z"/></svg> 100% Seguro</li>
+            <li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19c0 1.5-1.5 2.5-4 2.5h-2"/></svg> Suporte Especializado</li>
+          </ul>
+        </div>
+
+        <form class="formulario" action="mailto:contato@seguramais.com.br" method="post" enctype="text/plain">
+          <label class="visualmente-oculto" for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+
+          <label class="visualmente-oculto" for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="E - Mail" required>
+
+          <label class="visualmente-oculto" for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+
+          <label class="visualmente-oculto" for="servico">Tipo de serviço de interesse</label>
+          <select id="servico" name="servico" required>
+            <option value="" selected disabled>Tipo de Serviço de Interesse</option>
+            <option value="monitoramento">Monitoramento</option>
+            <option value="vigilancia">Vigilância</option>
+            <option value="escolta">Escolta Armada</option>
+          </select>
+
+          <label class="visualmente-oculto" for="mensagem">Mensagem (opcional)</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Mensagem (opcional)"></textarea>
+
+          <button type="submit" class="botao botao--amarelo botao--largo">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div class="rodape__marca">
+        <a class="logo" href="index.html">
+          <img src="Imagens/logoseguramais.png" alt="Segura Mais Segurança Privada" width="300" height="100">
+        </a>
+        <p>Proteção, tecnologia e pessoas trabalhando juntas pela sua segurança</p>
+        <div class="redes">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icone icone--cheio" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.5-3.3h-3.2V8.6c0-1 .4-1.7 1.8-1.7h1.5V4.1C16.1 4 15.2 4 14.2 4 11.9 4 10.2 5.4 10.2 8v2.7H7.5V14h2.7v8z"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="rodape__links" aria-label="Links do rodapé">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="index.html#depoimentos">Depoimentos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="rodape__contato">
+        <h2>Contato</h2>
+        <ul>
+          <li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+5511987654321">(11) 98765-4321</a></li>
+          <li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:contato@seguramais.com.br">contato@seguramais.com.br</a></li>
+          <li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><address>Av. Principal, 123<br>São Paulo - SP</address></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="rodape__base">&copy; 2026 Segura Mais. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
